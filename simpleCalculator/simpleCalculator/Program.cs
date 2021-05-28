@@ -20,14 +20,14 @@ namespace simpleCalculator
 			Console.WriteLine("Note for this version: Select operand unavailable.");
 			Console.WriteLine("--------------------------------------------------\n");
 
-			Console.WriteLine("\n===============Your Input===============");
-			Console.WriteLine("Enter the first number: ");
+			Console.WriteLine("\n\t===============Your Input===============\n");
+			Console.WriteLine("\tEnter the first number: ");
 			num1 = Convert.ToDouble(Console.ReadLine());
-			Console.WriteLine("Enter the second number: ");
+			Console.WriteLine("\tEnter the second number: ");
 			num2 = Convert.ToDouble(Console.ReadLine());
 
 			Console.ForegroundColor = ConsoleColor.Yellow;
-			Console.WriteLine("===============Result Out===============\n");
+			Console.WriteLine("\n\t===============Result Out===============\n");
 			//Console.ReadLine();
 			// call methods & // output result
 			addi = add(num1, num2);
@@ -46,8 +46,8 @@ namespace simpleCalculator
 			Console.WriteLine(mod);
 
 			Console.ForegroundColor = ConsoleColor.Red;
-			Console.WriteLine("\n===============Terminated===============\n");
-			Console.WriteLine("\nPress any key to quit..");
+			Console.WriteLine("\n\t===============Terminated===============\n");
+			Console.WriteLine("\n\tPress any key to quit..");
 			Console.ReadKey();
 
 			
