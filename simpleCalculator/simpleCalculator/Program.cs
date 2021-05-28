@@ -21,9 +21,9 @@ namespace simpleCalculator
 			Console.WriteLine("--------------------------------------------------\n");
 
 			Console.WriteLine("\n\t===============Your Input===============\n");
-			Console.WriteLine("\tEnter the first number: ");
+			Console.Write("\tEnter the first number: ");
 			num1 = Convert.ToDouble(Console.ReadLine());
-			Console.WriteLine("\tEnter the second number: ");
+			Console.Write("\n\tEnter the second number: ");
 			num2 = Convert.ToDouble(Console.ReadLine());
 
 			Console.ForegroundColor = ConsoleColor.Yellow;
@@ -58,35 +58,35 @@ namespace simpleCalculator
 		public static double add(double x, double y)
 		{
 			double result = x + y;
-			Console.Write("Sum = ");
+			Console.Write("\t" + "Sum = ");
 			return result;
 		}
 		// method subtract
 		public static double subtract(double x, double y)
 		{
 			double result = x - y;
-			Console.Write("Difference = ");
+			Console.Write("\t" + "Difference = ");
 			return result;
 		}
 		// method multiply
 		public static double multiply(double x, double y)
 		{
 			double result = x * y;
-			Console.Write("Product = ");
+			Console.Write("\t" + "Product = ");
 			return result;
 		}
 		// method divide
 		public static double divide(double x, double y)
 		{
 			double result = x / y;
-			Console.Write("Quotient = ");
+			Console.Write("\t" + "Quotient = ");
 			return result;
 		}
 		// method modulo => rest of division
 		public static double modulo(double x, double y)
 		{
 			double result = x % y;
-			Console.Write("Rest of division = ");
+			Console.Write("\t" + "Rest of division = ");
 			return result;
 		}
 
