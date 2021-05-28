@@ -9,7 +9,7 @@ namespace simpleCalculator
 	class Program
 	{
 		public static double num1, num2;
-		public static double addi, subt, mult, divi;
+		public static double addi, subt, mult, divi, mod;
 		static void Main(string[] args)
 		{
 			string programName = "\t\tMINI CALCULATOR";
@@ -25,16 +25,27 @@ namespace simpleCalculator
 			num1 = Convert.ToDouble(Console.ReadLine());
 			Console.WriteLine("Enter the second number: ");
 			num2 = Convert.ToDouble(Console.ReadLine());
+
+			Console.ForegroundColor = ConsoleColor.Yellow;
 			Console.WriteLine("===============Result Out===============\n");
 			//Console.ReadLine();
-			// call methods
-			Console.WriteLine(add(num1,num2));
-			Console.WriteLine(subtract(num1, num2));
-			Console.WriteLine(multiply(num1, num2));
-			Console.WriteLine(divide(num1, num2));
-			Console.WriteLine(modulo(num1, num2));
-			//add(num1, num2);
-			//subtract(num1, num2);
+			// call methods & // output result
+			addi = add(num1, num2);
+			Console.WriteLine(addi);
+			
+			subt = subtract(num1, num2);
+			Console.WriteLine(subt);
+			
+			mult = multiply(num1, num2);
+			Console.WriteLine(mult);
+			
+			divi = divide(num1, num2);
+			Console.WriteLine(divi);
+
+			mod = modulo(num1, num2);
+			Console.WriteLine(mod);
+
+			Console.ForegroundColor = ConsoleColor.Red;
 			Console.WriteLine("\n===============Terminated===============\n");
 			Console.WriteLine("\nPress any key to quit..");
 			Console.ReadKey();
