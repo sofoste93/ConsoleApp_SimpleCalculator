@@ -7,13 +7,13 @@ A simple calculator with C#: Version 1.0
 
 - User input: On
 - Wrong user input: off / error not handled
-- Select arithmetic symbole: off / unavailable
+- Select arithmetic symbol: off / unavailable
 - Basic operation: 
   Add, 
   subtract, 
   multiplicate,
   divide,
-  get the rest of division
+  get the rest of the division
   
 - Restart operation: off
 - Auto close: off
