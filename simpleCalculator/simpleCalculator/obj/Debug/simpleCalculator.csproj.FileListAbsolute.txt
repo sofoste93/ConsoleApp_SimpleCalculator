@@ -1,0 +1,7 @@
+A:\Workspace\VisualStudio\ConsoleApp_SimpleCalculator\simpleCalculator\simpleCalculator\bin\Debug\simpleCalculator.exe.config
+A:\Workspace\VisualStudio\ConsoleApp_SimpleCalculator\simpleCalculator\simpleCalculator\bin\Debug\simpleCalculator.exe
+A:\Workspace\VisualStudio\ConsoleApp_SimpleCalculator\simpleCalculator\simpleCalculator\bin\Debug\simpleCalculator.pdb
+A:\Workspace\VisualStudio\ConsoleApp_SimpleCalculator\simpleCalculator\simpleCalculator\obj\Debug\simpleCalculator.csproj.AssemblyReference.cache
+A:\Workspace\VisualStudio\ConsoleApp_SimpleCalculator\simpleCalculator\simpleCalculator\obj\Debug\simpleCalculator.csproj.CoreCompileInputs.cache
+A:\Workspace\VisualStudio\ConsoleApp_SimpleCalculator\simpleCalculator\simpleCalculator\obj\Debug\simpleCalculator.exe
+A:\Workspace\VisualStudio\ConsoleApp_SimpleCalculator\simpleCalculator\simpleCalculator\obj\Debug\simpleCalculator.pdb
