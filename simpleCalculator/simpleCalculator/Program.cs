@@ -32,11 +32,14 @@ namespace simpleCalculator
 			}
 			catch (FormatException)
 			{
+				Console.ForegroundColor = ConsoleColor.DarkRed;
+				Console.BackgroundColor = ConsoleColor.Yellow;
 				Console.WriteLine(errMsg + "\n");
 			}
 			finally
 			{
 				Console.ForegroundColor = ConsoleColor.Yellow;
+				
 				Console.WriteLine("\n\t===============Result Out===============\n");
 				//Console.ReadLine();
 				// call methods & // output result
