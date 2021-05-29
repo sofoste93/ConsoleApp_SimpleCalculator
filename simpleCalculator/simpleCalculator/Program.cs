@@ -15,42 +15,51 @@ namespace simpleCalculator
 			string programName = "\t\tMINI CALCULATOR";
 
 			Console.ForegroundColor = ConsoleColor.Green;
+
 			Console.WriteLine("\n--------------------------------------------------");
 			Console.WriteLine(programName);
 			Console.WriteLine("Note for this version: Select operand unavailable.");
 			Console.WriteLine("--------------------------------------------------\n");
 
 			Console.WriteLine("\n\t===============Your Input===============\n");
-			Console.Write("\tEnter the first number: ");
-			num1 = Convert.ToDouble(Console.ReadLine());
-			Console.Write("\n\tEnter the second number: ");
-			num2 = Convert.ToDouble(Console.ReadLine());
+			try
+			{
+				Console.Write("\tEnter the first number: ");
+				num1 = Convert.ToDouble(Console.ReadLine());
+				Console.Write("\n\tEnter the second number: ");
+				num2 = Convert.ToDouble(Console.ReadLine());
+			}
+			catch (FormatException)
+			{
+				Console.WriteLine("Number expected! Please check your input");
+			}
+			finally
+			{
+				Console.ForegroundColor = ConsoleColor.Yellow;
+				Console.WriteLine("\n\t===============Result Out===============\n");
+				//Console.ReadLine();
+				// call methods & // output result
+				addi = add(num1, num2);
+				Console.WriteLine(addi);
 
-			Console.ForegroundColor = ConsoleColor.Yellow;
-			Console.WriteLine("\n\t===============Result Out===============\n");
-			//Console.ReadLine();
-			// call methods & // output result
-			addi = add(num1, num2);
-			Console.WriteLine(addi);
-			
-			subt = subtract(num1, num2);
-			Console.WriteLine(subt);
-			
-			mult = multiply(num1, num2);
-			Console.WriteLine(mult);
-			
-			divi = divide(num1, num2);
-			Console.WriteLine(divi);
+				subt = subtract(num1, num2);
+				Console.WriteLine(subt);
 
-			mod = modulo(num1, num2);
-			Console.WriteLine(mod);
+				mult = multiply(num1, num2);
+				Console.WriteLine(mult);
 
-			Console.ForegroundColor = ConsoleColor.Red;
+				divi = divide(num1, num2);
+				Console.WriteLine(divi);
+
+				mod = modulo(num1, num2);
+				Console.WriteLine(mod);
+
+				Console.ForegroundColor = ConsoleColor.Red;
+			}
+
 			Console.WriteLine("\n\t===============Terminated===============\n");
 			Console.WriteLine("\n\tPress any key to quit..");
 			Console.ReadKey();
-
-			
 
 		}
 
