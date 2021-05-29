@@ -10,6 +10,7 @@ namespace simpleCalculator
 	{
 		public static double num1, num2;
 		public static double addi, subt, mult, divi, mod;
+		public static string errMsg = "\n\t|_>> Number expected! Please check your input <<_|";
 		static void Main(string[] args)
 		{
 			string programName = "\t\tMINI CALCULATOR";
@@ -31,7 +32,7 @@ namespace simpleCalculator
 			}
 			catch (FormatException)
 			{
-				Console.WriteLine("Number expected! Please check your input");
+				Console.WriteLine(errMsg + "\n");
 			}
 			finally
 			{
