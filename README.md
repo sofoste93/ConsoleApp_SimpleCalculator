@@ -1,12 +1,12 @@
 # ConsoleApp_SimpleCalculator
-A simple calculator with C#: Version 1.0
+A simple calculator with C#: for actual version please check out Release notes
 
 --------------------------------------------------------
 
 # In this version
 
 - User input: On
-- Wrong user input: off / error not handled
+- Wrong user input: updated / error handling
 - Select arithmetic symbol: off / unavailable
 - Basic operation: 
   Add, 
@@ -16,8 +16,7 @@ A simple calculator with C#: Version 1.0
   get the rest of the division
   
 - Restart operation: off
-- Auto close: off
-- Press any key to close
+- Auto close: Press any key to close the window
 
 --------------------------------------------------------
 
