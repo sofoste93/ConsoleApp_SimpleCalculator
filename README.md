@@ -1,5 +1,5 @@
 # ConsoleApp_SimpleCalculator
-A simple calculator with C#: Version 1.0
+A simple calculator with C#: for actual version please check out Release notes
 
 --------------------------------------------------------
 
