@@ -10,6 +10,9 @@ namespace simpleCalculator
 	{
 		public static double num1, num2;
 		public static double addi, subt, mult, divi, mod;
+
+		public static string errMsgOverFlow = "\n\t>> ERROR Over Flow! <<\n\n\t - The input value is too long.";
+		public static string errMsgNull = "\n\t>> ERROR EMPTY! <<\n\n\t - The input cannot be empty.";
 		public static string errMsg = "" +
 			"\n\t>> FORMAT ERROR! <<\n\n\t - Make sure your input has the correct format " +
 			"\n\t - For decimal number please use ','(a comma) instead of '.'(a dot)\n";
@@ -31,16 +34,25 @@ namespace simpleCalculator
 				num1 = Convert.ToDouble(Console.ReadLine());
 				Console.Write("\n\tEnter the second number: ");
 				num2 = Convert.ToDouble(Console.ReadLine());
-			}
+							}
 			catch (FormatException)
 			{
 				Console.ForegroundColor = ConsoleColor.Red;
 				Console.WriteLine(errMsg + "\n");
 			}
+			catch (ArgumentNullException)
+
+			{
+				Console.WriteLine(errMsgNull);
+			}
+			catch (OverflowException)
+			{
+				Console.WriteLine(errMsgOverFlow);
+			}
 			finally
 			{
 				Console.ForegroundColor = ConsoleColor.Yellow;
-				
+
 				Console.WriteLine("\n\t===============[ Result Out ]===============\n");
 				//Console.ReadLine();
 				// call methods & // output result
@@ -60,7 +72,7 @@ namespace simpleCalculator
 				Console.WriteLine(mod);
 
 				Console.ForegroundColor = ConsoleColor.Red;
-			}
+				}
 
 			Console.WriteLine("\n\t===============[ Terminated ]===============\n");
 			Console.WriteLine("\n\tPress any key to quit..");
