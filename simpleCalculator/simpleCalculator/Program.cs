@@ -10,19 +10,21 @@ namespace simpleCalculator
 	{
 		public static double num1, num2;
 		public static double addi, subt, mult, divi, mod;
-		public static string errMsg = "\n\t|_>> Number expected! Please check your input <<_|";
+		public static string errMsg = "" +
+			"\n\t>> FORMAT ERROR! <<\n\n\t - Make sure your input has the correct format " +
+			"\n\t - For decimal number please use ','(a comma) instead of '.'(a dot)\n";
 		static void Main(string[] args)
 		{
-			string programName = "\t\tMINI CALCULATOR";
+			string programName = "\t\t\tMINI CALCULATOR";
 
 			Console.ForegroundColor = ConsoleColor.Green;
 
-			Console.WriteLine("\n--------------------------------------------------");
+			Console.WriteLine("\n\t--------------------------------------------------");
 			Console.WriteLine(programName);
-			Console.WriteLine("Note for this version: Select operand unavailable.");
-			Console.WriteLine("--------------------------------------------------\n");
+			Console.WriteLine("\tNote for this version: Select operand unavailable.");
+			Console.WriteLine("\t--------------------------------------------------\n");
 
-			Console.WriteLine("\n\t===============Your Input===============\n");
+			Console.WriteLine("\n\t===============[ Your Input ]===============\n");
 			try
 			{
 				Console.Write("\tEnter the first number: ");
@@ -32,15 +34,14 @@ namespace simpleCalculator
 			}
 			catch (FormatException)
 			{
-				Console.ForegroundColor = ConsoleColor.DarkRed;
-				Console.BackgroundColor = ConsoleColor.Yellow;
+				Console.ForegroundColor = ConsoleColor.Red;
 				Console.WriteLine(errMsg + "\n");
 			}
 			finally
 			{
 				Console.ForegroundColor = ConsoleColor.Yellow;
 				
-				Console.WriteLine("\n\t===============Result Out===============\n");
+				Console.WriteLine("\n\t===============[ Result Out ]===============\n");
 				//Console.ReadLine();
 				// call methods & // output result
 				addi = add(num1, num2);
@@ -61,7 +62,7 @@ namespace simpleCalculator
 				Console.ForegroundColor = ConsoleColor.Red;
 			}
 
-			Console.WriteLine("\n\t===============Terminated===============\n");
+			Console.WriteLine("\n\t===============[ Terminated ]===============\n");
 			Console.WriteLine("\n\tPress any key to quit..");
 			Console.ReadKey();
 
