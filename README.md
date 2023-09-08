@@ -23,9 +23,7 @@ A simple calculator with C#: for actual version please check out Release notes
 >
 > # Screenshots
 >
-> Info
->
-> ![fetched](https://user-images.githubusercontent.com/28387985/120030662-0a44ae80-bff8-11eb-8f16-6466440c523a.PNG)
+> Overview
 >
 > Program start
 >
